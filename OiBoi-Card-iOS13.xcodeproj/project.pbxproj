@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE320FB929EF450900294EFE /* Alkatra-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE320FB829EF450800294EFE /* Alkatra-VariableFont_wght.ttf */; };
 		DE6B1C4D29E0938000D34877 /* OiBoi_Card_iOS13App.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6B1C4C29E0938000D34877 /* OiBoi_Card_iOS13App.swift */; };
 		DE6B1C4F29E0938000D34877 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6B1C4E29E0938000D34877 /* ContentView.swift */; };
 		DE6B1C5129E0938100D34877 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE6B1C5029E0938100D34877 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE320FB829EF450800294EFE /* Alkatra-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Alkatra-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		DE6B1C4929E0938000D34877 /* OiBoi-Card-iOS13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OiBoi-Card-iOS13.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE6B1C4C29E0938000D34877 /* OiBoi_Card_iOS13App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OiBoi_Card_iOS13App.swift; sourceTree = "<group>"; };
 		DE6B1C4E29E0938000D34877 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				DE6B1C5F29E099F600D34877 /* CarterOne-Regular.ttf */,
+				DE320FB829EF450800294EFE /* Alkatra-VariableFont_wght.ttf */,
 			);
 			path = fonts;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE320FB929EF450900294EFE /* Alkatra-VariableFont_wght.ttf in Resources */,
 				DE6B1C5429E0938100D34877 /* Preview Assets.xcassets in Resources */,
 				DE6B1C6029E099F600D34877 /* CarterOne-Regular.ttf in Resources */,
 				DE6B1C5129E0938100D34877 /* Assets.xcassets in Resources */,
