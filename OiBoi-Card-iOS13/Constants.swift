@@ -10,15 +10,15 @@ import Foundation
 struct K {
     struct Info{
         static let photoName = "watson"
-        static let firstName = "John"
-        static let lastName = "Doe"
-        static let emailAddress = "JohnDoe@example.com"
+        static let firstName = "Watson"
+        static let lastName = "DeCat"
+        static let emailAddress = "watson@decat.meow"
         static let phoneNumber = "+1 (234) 456-7890"
-        static let roleTitle = "UX/UI Designer"
+        static let roleTitle = "Expert Snacker"
 
     }
     struct Links{
-        static let website = "https://www.JohnDoe.com"
+        static let website = "https://www.watsondecat.com"
         static let github = "https://www.github.com"
         static let linkedIn = "https://www.linkedin.com"
         static let twitter = "https://www.twitter.com"

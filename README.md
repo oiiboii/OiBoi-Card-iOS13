@@ -21,7 +21,7 @@ struct K {
         static let photoName = "profile_photo"
     }
 }
-![Screenshot](Assets/screenshot.png)
+![Screenshot](Assets/minfo_mock.png)
 
 ### Customization Steps
 1. Replace the values of **firstName, lastName, roleTitle, phoneNumber**, and **emailAddress** with your own information.
