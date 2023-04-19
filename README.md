@@ -22,7 +22,7 @@ struct K {
     }
 }
 ```
-![Screenshot](Assets/minfo_mock.png)
+![Screenshot](minfo_mock.png)
 
 ### Customization Steps
 1. Replace the values of **firstName, lastName, roleTitle, phoneNumber**, and **emailAddress** with your own information.
