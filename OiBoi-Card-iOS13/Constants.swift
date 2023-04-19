@@ -10,18 +10,18 @@ import Foundation
 struct K {
     struct Info{
         static let photoName = "oiboi_photo"
-        static let firstName = "Omer"
-        static let lastName = "Ifrah"
-        static let emailAddress = "oi38@cornell.edu"
-        static let phoneNumber = "+1 (631) 946-9190"
-        static let roleTitle = "Product Manager"
+        static let firstName = "John"
+        static let lastName = "Doe"
+        static let emailAddress = "JohnDoe@example.com"
+        static let phoneNumber = "+1 (234) 456-7890"
+        static let roleTitle = "UX/UI Designer"
 
     }
     struct Links{
-        static let website = "https://www.example.com/JohnDoe"
-        static let github = "https://www.example.com/JohnDoe"
-        static let linkedIn = "https://www.example.com/JohnDoe"
-        static let twitter = "https://www.example.com/JohnDoe"
+        static let website = "https://www.JohnDoe.com"
+        static let github = "https://www.github.com"
+        static let linkedIn = "https://www.linkedin.com"
+        static let twitter = "https://www.twitter.com"
     }
     struct Logos{
         static let qr = "qrcode"
