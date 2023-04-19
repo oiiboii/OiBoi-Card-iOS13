@@ -26,7 +26,7 @@ struct K {
     struct Logos{
         static let qr = "qrcode"
         static let phone = "phone.fill"
-        static let email = "evalope.fill"
+        static let email = "envelope.fill"
     }
     struct Labels{
         static let qrLabel = "Scan Me!"
