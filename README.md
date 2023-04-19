@@ -21,6 +21,7 @@ struct K {
         static let photoName = "profile_photo"
     }
 }
+```
 ![Screenshot](Assets/minfo_mock.png)
 
 ### Customization Steps
