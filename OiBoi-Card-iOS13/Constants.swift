@@ -9,7 +9,7 @@
 import Foundation
 struct K {
     struct Info{
-        static let photoName = "oiboi_photo"
+        static let photoName = "watson"
         static let firstName = "John"
         static let lastName = "Doe"
         static let emailAddress = "JohnDoe@example.com"

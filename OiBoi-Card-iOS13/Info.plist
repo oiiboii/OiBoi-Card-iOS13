@@ -3,9 +3,6 @@
 <plist version="1.0">
 <dict>
 	<key>UIAppFonts</key>
-	<array>
-		<string>CarterOne-Regular.ttf</string>
-		<string>Alkatra-VariableFont_wght.ttf</string>
-	</array>
+	<array/>
 </dict>
 </plist>

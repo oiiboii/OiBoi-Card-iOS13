@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "oiboi_photo.jpg",
+      "filename" : "watson 1.jpeg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "watson.jpeg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "watson 2.jpeg",
       "idiom" : "universal",
       "scale" : "3x"
     }

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DE320FB929EF450900294EFE /* Alkatra-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE320FB829EF450800294EFE /* Alkatra-VariableFont_wght.ttf */; };
 		DE320FBB29F038F300294EFE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE320FBA29F038F300294EFE /* Constants.swift */; };
 		DE320FBD29F03EED00294EFE /* ContactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE320FBC29F03EED00294EFE /* ContactViewModel.swift */; };
 		DE320FBF29F040E700294EFE /* QRCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE320FBE29F040E700294EFE /* QRCodeView.swift */; };
@@ -15,11 +14,9 @@
 		DE6B1C4F29E0938000D34877 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6B1C4E29E0938000D34877 /* ContentView.swift */; };
 		DE6B1C5129E0938100D34877 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE6B1C5029E0938100D34877 /* Assets.xcassets */; };
 		DE6B1C5429E0938100D34877 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE6B1C5329E0938100D34877 /* Preview Assets.xcassets */; };
-		DE6B1C6029E099F600D34877 /* CarterOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE6B1C5F29E099F600D34877 /* CarterOne-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DE320FB829EF450800294EFE /* Alkatra-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Alkatra-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		DE320FBA29F038F300294EFE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DE320FBC29F03EED00294EFE /* ContactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewModel.swift; sourceTree = "<group>"; };
 		DE320FBE29F040E700294EFE /* QRCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeView.swift; sourceTree = "<group>"; };
@@ -29,7 +26,6 @@
 		DE6B1C5029E0938100D34877 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE6B1C5329E0938100D34877 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DE6B1C5D29E0983500D34877 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		DE6B1C5F29E099F600D34877 /* CarterOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CarterOne-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +58,6 @@
 		DE6B1C4B29E0938000D34877 /* OiBoi-Card-iOS13 */ = {
 			isa = PBXGroup;
 			children = (
-				DE6B1C5E29E099CB00D34877 /* fonts */,
 				DE6B1C5D29E0983500D34877 /* Info.plist */,
 				DE6B1C4C29E0938000D34877 /* OiBoi_Card_iOS13App.swift */,
 				DE6B1C4E29E0938000D34877 /* ContentView.swift */,
@@ -81,15 +76,6 @@
 				DE6B1C5329E0938100D34877 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		DE6B1C5E29E099CB00D34877 /* fonts */ = {
-			isa = PBXGroup;
-			children = (
-				DE6B1C5F29E099F600D34877 /* CarterOne-Regular.ttf */,
-				DE320FB829EF450800294EFE /* Alkatra-VariableFont_wght.ttf */,
-			);
-			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,9 +136,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE320FB929EF450900294EFE /* Alkatra-VariableFont_wght.ttf in Resources */,
 				DE6B1C5429E0938100D34877 /* Preview Assets.xcassets in Resources */,
-				DE6B1C6029E099F600D34877 /* CarterOne-Regular.ttf in Resources */,
 				DE6B1C5129E0938100D34877 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
