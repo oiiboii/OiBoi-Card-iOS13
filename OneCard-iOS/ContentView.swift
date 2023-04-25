@@ -10,13 +10,18 @@ import SwiftUI
 import ContactsUI
 
 struct ContentView: View {
+    
+    @State private var qrCodeURL: String = ""
     // State property to track the scale of the profile image.
+    
     @State private var scale: CGFloat = 1.0
     
     // State object for the contact information.
     @StateObject private var contactViewModel = ContactViewModel()
+    private var pdfModel = PDFModel()
     
     var body: some View {
+        
         // Main navigation view.
         NavigationView {
             // Background gradient for the view.
@@ -45,7 +50,8 @@ struct ContentView: View {
                         .font(.system(size: 40))
                         .fontWeight(.semibold)
                         .foregroundColor(.white)
-                        .kerning(2)
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.5)                        .kerning(2)
                     
                     // Role title label.
                     Text(K.Info.roleTitle)
@@ -66,7 +72,7 @@ struct ContentView: View {
                     ContactInfoView(label: "Email", value: K.Info.emailAddress, symbol: K.Logos.email)
                     
                     // QR code link.
-                    NavigationLink(destination: QRCodeView(value: K.Links.website)) {
+                    NavigationLink(destination: QRCodeView(qrCodeURL: $qrCodeURL)) {
                         Image(systemName: K.Logos.qr)
                             .resizable()
                             .frame(width: 40, height: 40)
@@ -85,11 +91,15 @@ struct ContentView: View {
                 .padding(.top, 100)
                 .padding(.horizontal, 20)
                 .scaledToFit()
+                .padding(.top, 100)
+                .padding(.horizontal, 20)
+                .scaledToFit()
+                
             }
-            .navigationBarHidden(true)
-        }
-    }
-}
+                            .navigationBarHidden(true)
+                        }
+                    }
+                }
 
 //MARK: - Gradient Background
 struct GradientBackground: View {

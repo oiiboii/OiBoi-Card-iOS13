@@ -8,8 +8,11 @@ import SwiftUI
 
 struct QRCodeView: View {
     // The string value to generate the QR code from.
-    let value: String
+    @Binding var qrCodeURL: String
 
+    // The PDFModel instance
+    private let pdfModel = PDFModel()
+    
     // The body of the view, which defines the layout and content of the view.
     var body: some View {
         ZStack {
@@ -26,12 +29,26 @@ struct QRCodeView: View {
                     .kerning(2)
 
                 // The QR code image generated from the given value.
-                Image(uiImage: generateQRCode(from: value))
+                Image(uiImage: generateQRCode(from: qrCodeURL))
                     .interpolation(.none)
                     .resizable()
                     .scaledToFit()
                     .frame(width: 200, height: 200)
                     .padding()
+            }.onAppear {
+                generateAndUpdateQRCodeURL()
+            }
+        }
+    }
+    private func generateAndUpdateQRCodeURL() {
+        if let pdfData = pdfModel.generatePDF() {
+            pdfModel.uploadPDF(data: pdfData) { result in
+                switch result {
+                case .success(let urlString):
+                    qrCodeURL = urlString
+                case .failure(let error):
+                    print("Error uploading PDF: \(error.localizedDescription)")
+                }
             }
         }
     }

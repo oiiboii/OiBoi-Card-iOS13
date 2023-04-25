@@ -6,6 +6,7 @@
 
 import SwiftUI
 import ContactsUI
+import PDFKit
 
 // MARK: - ContactViewModel
 // A view model that manages the contact information.
