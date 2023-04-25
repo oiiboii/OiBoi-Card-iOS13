@@ -1,6 +1,6 @@
 //
 //  Constants.swift
-//  OiBoi-Card-iOS13
+//  OneCard-iOS
 //
 //  Created by Omer Ifrah on 4/19/23.
 

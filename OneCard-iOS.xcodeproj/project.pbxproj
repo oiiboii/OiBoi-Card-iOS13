@@ -11,7 +11,7 @@
 		DE320FBD29F03EED00294EFE /* ContactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE320FBC29F03EED00294EFE /* ContactViewModel.swift */; };
 		DE320FBF29F040E700294EFE /* QRCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE320FBE29F040E700294EFE /* QRCodeView.swift */; };
 		DE320FC329F05FEF00294EFE /* minfo_mock.png in Resources */ = {isa = PBXBuildFile; fileRef = DE320FC229F05FEF00294EFE /* minfo_mock.png */; };
-		DE6B1C4D29E0938000D34877 /* OiBoi_Card_iOS13App.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6B1C4C29E0938000D34877 /* OiBoi_Card_iOS13App.swift */; };
+		DE6B1C4D29E0938000D34877 /* OneCard_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6B1C4C29E0938000D34877 /* OneCard_iOSApp.swift */; };
 		DE6B1C4F29E0938000D34877 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6B1C4E29E0938000D34877 /* ContentView.swift */; };
 		DE6B1C5129E0938100D34877 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE6B1C5029E0938100D34877 /* Assets.xcassets */; };
 		DE6B1C5429E0938100D34877 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE6B1C5329E0938100D34877 /* Preview Assets.xcassets */; };
@@ -22,8 +22,8 @@
 		DE320FBC29F03EED00294EFE /* ContactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewModel.swift; sourceTree = "<group>"; };
 		DE320FBE29F040E700294EFE /* QRCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeView.swift; sourceTree = "<group>"; };
 		DE320FC229F05FEF00294EFE /* minfo_mock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = minfo_mock.png; sourceTree = "<group>"; };
-		DE6B1C4929E0938000D34877 /* OiBoi-Card-iOS13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OiBoi-Card-iOS13.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE6B1C4C29E0938000D34877 /* OiBoi_Card_iOS13App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OiBoi_Card_iOS13App.swift; sourceTree = "<group>"; };
+		DE6B1C4929E0938000D34877 /* OneCard-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OneCard-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE6B1C4C29E0938000D34877 /* OneCard_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneCard_iOSApp.swift; sourceTree = "<group>"; };
 		DE6B1C4E29E0938000D34877 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DE6B1C5029E0938100D34877 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE6B1C5329E0938100D34877 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -45,7 +45,7 @@
 			isa = PBXGroup;
 			children = (
 				DE320FC229F05FEF00294EFE /* minfo_mock.png */,
-				DE6B1C4B29E0938000D34877 /* OiBoi-Card-iOS13 */,
+				DE6B1C4B29E0938000D34877 /* OneCard-iOS */,
 				DE6B1C4A29E0938000D34877 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,16 +53,16 @@
 		DE6B1C4A29E0938000D34877 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DE6B1C4929E0938000D34877 /* OiBoi-Card-iOS13.app */,
+				DE6B1C4929E0938000D34877 /* OneCard-iOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DE6B1C4B29E0938000D34877 /* OiBoi-Card-iOS13 */ = {
+		DE6B1C4B29E0938000D34877 /* OneCard-iOS */ = {
 			isa = PBXGroup;
 			children = (
 				DE6B1C5D29E0983500D34877 /* Info.plist */,
-				DE6B1C4C29E0938000D34877 /* OiBoi_Card_iOS13App.swift */,
+				DE6B1C4C29E0938000D34877 /* OneCard_iOSApp.swift */,
 				DE6B1C4E29E0938000D34877 /* ContentView.swift */,
 				DE320FBE29F040E700294EFE /* QRCodeView.swift */,
 				DE320FBC29F03EED00294EFE /* ContactViewModel.swift */,
@@ -70,7 +70,7 @@
 				DE6B1C5029E0938100D34877 /* Assets.xcassets */,
 				DE6B1C5229E0938100D34877 /* Preview Content */,
 			);
-			path = "OiBoi-Card-iOS13";
+			path = "OneCard-iOS";
 			sourceTree = "<group>";
 		};
 		DE6B1C5229E0938100D34877 /* Preview Content */ = {
@@ -84,9 +84,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DE6B1C4829E0938000D34877 /* OiBoi-Card-iOS13 */ = {
+		DE6B1C4829E0938000D34877 /* OneCard-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DE6B1C5729E0938100D34877 /* Build configuration list for PBXNativeTarget "OiBoi-Card-iOS13" */;
+			buildConfigurationList = DE6B1C5729E0938100D34877 /* Build configuration list for PBXNativeTarget "OneCard-iOS" */;
 			buildPhases = (
 				DE6B1C4529E0938000D34877 /* Sources */,
 				DE6B1C4629E0938000D34877 /* Frameworks */,
@@ -96,9 +96,9 @@
 			);
 			dependencies = (
 			);
-			name = "OiBoi-Card-iOS13";
-			productName = "OiBoi-Card-iOS13";
-			productReference = DE6B1C4929E0938000D34877 /* OiBoi-Card-iOS13.app */;
+			name = "OneCard-iOS";
+			productName = "OneCard-iOS";
+			productReference = DE6B1C4929E0938000D34877 /* OneCard-iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -116,7 +116,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DE6B1C4429E0938000D34877 /* Build configuration list for PBXProject "OiBoi-Card-iOS13" */;
+			buildConfigurationList = DE6B1C4429E0938000D34877 /* Build configuration list for PBXProject "OneCard-iOS" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -129,7 +129,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DE6B1C4829E0938000D34877 /* OiBoi-Card-iOS13 */,
+				DE6B1C4829E0938000D34877 /* OneCard-iOS */,
 			);
 		};
 /* End PBXProject section */
@@ -155,7 +155,7 @@
 				DE6B1C4F29E0938000D34877 /* ContentView.swift in Sources */,
 				DE320FBD29F03EED00294EFE /* ContactViewModel.swift in Sources */,
 				DE320FBF29F040E700294EFE /* QRCodeView.swift in Sources */,
-				DE6B1C4D29E0938000D34877 /* OiBoi_Card_iOS13App.swift in Sources */,
+				DE6B1C4D29E0938000D34877 /* OneCard_iOSApp.swift in Sources */,
 				DE320FBB29F038F300294EFE /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,11 +284,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"OiBoi-Card-iOS13/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"OneCard-iOS/Preview Content\"";
 				DEVELOPMENT_TEAM = VZ7FNTQXT5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "OiBoi-Card-iOS13/Info.plist";
+				INFOPLIST_FILE = "OneCard-iOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,7 +299,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.oiboi.OiBoi-Card-iOS13";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.oiboi.OneCard-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -314,11 +314,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"OiBoi-Card-iOS13/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"OneCard-iOS/Preview Content\"";
 				DEVELOPMENT_TEAM = VZ7FNTQXT5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "OiBoi-Card-iOS13/Info.plist";
+				INFOPLIST_FILE = "OneCard-iOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -329,7 +329,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.oiboi.OiBoi-Card-iOS13";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.oiboi.OneCard-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -340,7 +340,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DE6B1C4429E0938000D34877 /* Build configuration list for PBXProject "OiBoi-Card-iOS13" */ = {
+		DE6B1C4429E0938000D34877 /* Build configuration list for PBXProject "OneCard-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DE6B1C5529E0938100D34877 /* Debug */,
@@ -349,7 +349,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DE6B1C5729E0938100D34877 /* Build configuration list for PBXNativeTarget "OiBoi-Card-iOS13" */ = {
+		DE6B1C5729E0938100D34877 /* Build configuration list for PBXNativeTarget "OneCard-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DE6B1C5829E0938100D34877 /* Debug */,
