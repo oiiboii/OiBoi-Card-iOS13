@@ -44,15 +44,16 @@ struct ContentView: View {
                         .onAppear {
                             scale = 1.05
                         }
-                    
+                        
                     // Name label.
                     Text("\(K.Info.firstName) \(K.Info.lastName)")
                         .font(.system(size: 40))
                         .fontWeight(.semibold)
                         .foregroundColor(.white)
                         .lineLimit(1)
-                        .minimumScaleFactor(0.5)                        .kerning(2)
-                    
+                        .minimumScaleFactor(0.5)
+                        .kerning(2)
+                        
                     // Role title label.
                     Text(K.Info.roleTitle)
                         .foregroundColor(.white)
@@ -88,7 +89,6 @@ struct ContentView: View {
                     .buttonStyle(CapsuleButtonStyle())
                     .padding(.top, 20)
                 }
-                .padding(.top, 100)
                 .padding(.horizontal, 20)
                 .scaledToFit()
                 .padding(.top, 100)
