@@ -14,6 +14,7 @@
 		DE52912A29F873AF00E0E6C4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE52912929F873AF00E0E6C4 /* GoogleService-Info.plist */; };
 		DE52912D29F8744200E0E6C4 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = DE52912C29F8744200E0E6C4 /* FirebaseStorage */; };
 		DE52912F29F875A200E0E6C4 /* PDFModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE52912E29F875A200E0E6C4 /* PDFModel.swift */; };
+		DE5A3E9B29F9A78B00178DB1 /* FirebaseDynamicLinks in Frameworks */ = {isa = PBXBuildFile; productRef = DE5A3E9A29F9A78B00178DB1 /* FirebaseDynamicLinks */; };
 		DE6B1C4D29E0938000D34877 /* OneCard_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6B1C4C29E0938000D34877 /* OneCard_iOSApp.swift */; };
 		DE6B1C4F29E0938000D34877 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6B1C4E29E0938000D34877 /* ContentView.swift */; };
 		DE6B1C5129E0938100D34877 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE6B1C5029E0938100D34877 /* Assets.xcassets */; };
@@ -41,18 +42,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE52912D29F8744200E0E6C4 /* FirebaseStorage in Frameworks */,
+				DE5A3E9B29F9A78B00178DB1 /* FirebaseDynamicLinks in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE5A3E9929F9A78B00178DB1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DE6B1C4029E0938000D34877 = {
 			isa = PBXGroup;
 			children = (
 				DE320FC229F05FEF00294EFE /* minfo_mock.png */,
 				DE6B1C4B29E0938000D34877 /* OneCard-iOS */,
 				DE6B1C4A29E0938000D34877 /* Products */,
+				DE5A3E9929F9A78B00178DB1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +117,7 @@
 			name = "OneCard-iOS";
 			packageProductDependencies = (
 				DE52912C29F8744200E0E6C4 /* FirebaseStorage */,
+				DE5A3E9A29F9A78B00178DB1 /* FirebaseDynamicLinks */,
 			);
 			productName = "OneCard-iOS";
 			productReference = DE6B1C4929E0938000D34877 /* OneCard-iOS.app */;
@@ -392,6 +403,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = DE52912B29F8744200E0E6C4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
+		};
+		DE5A3E9A29F9A78B00178DB1 /* FirebaseDynamicLinks */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE52912B29F8744200E0E6C4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDynamicLinks;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

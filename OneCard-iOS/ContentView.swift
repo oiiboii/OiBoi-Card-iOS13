@@ -7,7 +7,6 @@
 import SwiftUI
 import ContactsUI
 import SwiftUI
-import ContactsUI
 
 struct ContentView: View {
     
