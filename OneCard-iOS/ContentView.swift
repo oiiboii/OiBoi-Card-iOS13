@@ -9,41 +9,50 @@ import ContactsUI
 import SwiftUI
 
 struct ContentView: View {
-    
+    // State property to track the URL for the QR code.
     @State private var qrCodeURL: String = ""
-    // State property to track the scale of the profile image.
     
+    // State property to track the scale of the profile image.
     @State private var scale: CGFloat = 1.0
     
     // State object for the contact information.
     @StateObject private var contactViewModel = ContactViewModel()
+    
+    // PDF model for generating PDF documents.
     private var pdfModel = PDFModel()
     
     var body: some View {
         
         // Main navigation view.
         NavigationView {
+            
             // Background gradient for the view.
             ZStack {
                 GradientBackground()
                 
                 // Main content of the view.
                 VStack(spacing: 20) {
+                    
                     // Profile image.
                     Image(K.Info.photoName)
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 125)
                         .clipShape(Circle())
-                        .overlay(Circle()
-                            .stroke(Color.white.opacity(0.5), lineWidth: 4)
-                        ).shadow(color: Color.black.opacity(0.2), radius: 10, x: 0, y: 4)
+                        .overlay(
+                            Circle()
+                                .stroke(Color.white.opacity(0.5), lineWidth: 4)
+                        )
+                        .shadow(color: Color.black.opacity(0.2), radius: 10, x: 0, y: 4)
                         .scaleEffect(scale)
-                        .animation(Animation.easeInOut(duration: 3).repeatForever(autoreverses: true), value: scale)
+                        .animation(
+                            Animation.easeInOut(duration: 3).repeatForever(autoreverses: true),
+                            value: scale
+                        )
                         .onAppear {
                             scale = 1.05
                         }
-                        
+                    
                     // Name label.
                     Text("\(K.Info.firstName) \(K.Info.lastName)")
                         .font(.system(size: 40))
@@ -52,7 +61,7 @@ struct ContentView: View {
                         .lineLimit(1)
                         .minimumScaleFactor(0.5)
                         .kerning(2)
-                        
+                    
                     // Role title label.
                     Text(K.Info.roleTitle)
                         .foregroundColor(.white)
@@ -72,12 +81,13 @@ struct ContentView: View {
                     ContactInfoView(label: "Email", value: K.Info.emailAddress, symbol: K.Logos.email)
                     
                     // QR code link.
-                    NavigationLink(destination: QRCodeView(qrCodeURL: $qrCodeURL)) {
+                    NavigationLink(destination: QRCodeView()) {
                         Image(systemName: K.Logos.qr)
                             .resizable()
                             .frame(width: 40, height: 40)
                             .foregroundColor(.white)
-                    }.padding(.top, 20)
+                    }
+                    .padding(.top, 20)
                     
                     // Add to contacts button.
                     NavigationLink(destination: AddContactView(contact: contactViewModel.contact)) {
@@ -95,10 +105,10 @@ struct ContentView: View {
                 .scaledToFit()
                 
             }
-                            .navigationBarHidden(true)
-                        }
-                    }
-                }
+            .navigationBarHidden(true)
+        }
+    }
+}
 
 //MARK: - Gradient Background
 struct GradientBackground: View {
@@ -128,7 +138,6 @@ struct CapsuleButtonStyle: ButtonStyle {
 }
 
 //MARK: - Preview
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
